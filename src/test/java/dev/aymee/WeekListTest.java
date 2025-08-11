@@ -72,4 +72,9 @@ public void orderDaysTest(){
     assertEquals("Viernes", sorted.get(6));
 
 }
+@Test
+public void ClearweekDaysTest(){
+    week.ClearweekDays();
+    assertEquals(0, week.getWeekDaysSize());
+}
 }

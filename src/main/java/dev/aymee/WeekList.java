@@ -62,4 +62,10 @@ public class WeekList {
          Collections.sort(weekDays);
        }
    }
+
+   public void ClearweekDays(){
+      if(weekDays!=null){
+         weekDays.clear();
+       }
+   }
 }
