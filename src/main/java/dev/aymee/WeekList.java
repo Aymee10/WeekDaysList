@@ -33,5 +33,13 @@ public class WeekList {
  return size;
    }
 
+   public boolean removeDay(String day){
+     if (weekDays!=null){
+      return weekDays.remove(day);
+     }
+     else
+     return false;
+
+   }
    
 }
