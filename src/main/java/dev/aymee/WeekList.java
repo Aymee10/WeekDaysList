@@ -22,10 +22,16 @@ public class WeekList {
    }
 
  public List<String> getWeekDays() {
-    return new ArrayList<>(weekDays);
+   return weekDays;
    }
 
-   
+   public int getWeekDaysSize(){
+      int size=0;
+      if(weekDays!=null){
+         size=weekDays.size();
+      }
+ return size;
+   }
 
    
 }
