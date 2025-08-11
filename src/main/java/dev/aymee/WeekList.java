@@ -48,5 +48,11 @@ public class WeekList {
     }
     return null; 
 }
-   
+   public boolean dayExist(String day){
+      boolean exist=false;
+     if(weekDays.contains(day)){
+      exist=true;
+     }
+      return exist;
+   }
 }
