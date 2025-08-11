@@ -47,4 +47,11 @@ public void testRemoveDay() {
     assertEquals(true, week.removeDay("Martes"));
     assertEquals(false, week.removeDay("Hola"));
 }
+
+@Test
+void testGetDay() {
+    assertEquals("Lunes", week.getDay(0));
+    assertEquals("Martes", week.getDay(1));
+    assertEquals(null, week.getDay(8));
+}
 }

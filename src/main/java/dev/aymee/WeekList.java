@@ -41,5 +41,12 @@ public class WeekList {
      return false;
 
    }
+
+   public String getDay(int index) {
+    if (weekDays != null && index >= 0 && index < weekDays.size()) {
+        return weekDays.get(index);
+    }
+    return null; 
+}
    
 }
