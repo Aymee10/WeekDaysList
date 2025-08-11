@@ -15,11 +15,13 @@ public class WeekListTest {
     @BeforeEach
     public void setUp(){
         week=new WeekList();
-        week.createWeekDays();
+        
     }
 
     @Test
     public void createWeekDaysTest(){
+        week.createWeekDays();
+       assertEquals(7, week.weekDays.size());
        assertEquals("Lunes", week.getWeekDays().get(0));
        assertEquals("Martes", week.getWeekDays().get(1));
        assertEquals("Miércoles", week.getWeekDays().get(2));
@@ -28,4 +30,6 @@ public class WeekListTest {
        assertEquals("Sábado", week.getWeekDays().get(5));
        assertEquals("Domingo", week.getWeekDays().get(6));
     }
+
+    
 }
