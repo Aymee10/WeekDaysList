@@ -1,5 +1,6 @@
 package dev.aymee;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class WeekList {
@@ -54,5 +55,11 @@ public class WeekList {
       exist=true;
      }
       return exist;
+   }
+
+   public void orderDays(){
+       if(weekDays!=null){
+         Collections.sort(weekDays);
+       }
    }
 }

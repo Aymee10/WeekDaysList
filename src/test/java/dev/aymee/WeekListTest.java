@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 // import static org.hamcrest.Matchers.equalTo;
 //import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import java.util.List;
 
 public class WeekListTest {
     private WeekList week;
@@ -60,5 +61,15 @@ public void dayExistTest(){
     assertEquals(true, week.dayExist("Jueves"));
     assertEquals(true, week.dayExist("Viernes"));
     assertEquals(false, week.dayExist("Agosto"));
+}
+
+@Test
+public void orderDaysTest(){
+    week.orderDays();
+    List <String> sorted=week.getWeekDays();
+    assertEquals("Domingo", sorted.get(0));
+    assertEquals("Jueves", sorted.get(1));
+    assertEquals("Viernes", sorted.get(6));
+
 }
 }
